@@ -57,14 +57,21 @@ def to_name(words):
 
 
 def adjust_name(name):
-    name = to_snake_case(name)
+    adjusted_name = to_snake_case(name)
     
-    words = to_words(name)
+    words = to_words(adjusted_name)
     words = remove_prohibited_words(words)
     words = apply_spell_correction(words)
     
-    name = to_name(words)
-    return to_snake_case(name)
+    adjusted_name = to_name(words)
+    
+    if name != adjusted_name:
+        print(f'Changed {name} to {adjusted_name}.')
+        
+    if error_postfix in adjusted_name:
+        print(f'Fix {adjusted_name}!')
+    
+    return to_snake_case(adjusted_name)
 
 
 for obj in bpy.context.selected_objects:
