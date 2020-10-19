@@ -9,7 +9,8 @@ A small script to automatically adjust the names of objects in the hierarchy in 
 
 
 ## Requirements
-From the `/bin` directory of the Blender's built-in Python, execute with admin rights: (example of directory in Windows: `C:\Program Files\Blender Foundation\Blender 2.90\2.90\python\bin`)
+From the `/bin` directory of the Blender's built-in Python, execute with admin rights:  
+(example of directory in Windows: `C:\Program Files\Blender Foundation\Blender 2.90\2.90\python\bin`)
 ```
 ./python -m ensurepip
 ./python -m pip install pyspellchecker
