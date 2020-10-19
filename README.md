@@ -1,3 +1,11 @@
 # bpy-rename
 
 A small script to automatically adjust the names of objects in the hierarchy.
+
+## Requirements
+From the `/bin` directory of the Blender's built-in Python, execute:
+
+```
+./python -m ensurepip
+./python -m pip install pyspellchecker
+```
