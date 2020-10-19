@@ -9,7 +9,7 @@ A small script to automatically adjust the names of objects in the hierarchy in 
 
 
 ## Requirements
-From the `/bin` directory of the Blender's built-in Python, execute:
+From the `/bin` directory of the Blender's built-in Python, execute with admin rights:
 
 ```
 ./python -m ensurepip
