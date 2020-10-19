@@ -19,6 +19,8 @@ From the `/bin` directory of the Blender's built-in Python, execute:
 ## Usage
 Select the objects for renaming and run the script.
 
+If there are any words that the spellchecker was not able to correct, they will be appended with `error_postfix` (`<fix>`, by default). Use the search bar to manually resolve such cases.
+
 
 ## Configuration
 - `known_words` - a list of extra words that are added to the dictionary of the spell checker
