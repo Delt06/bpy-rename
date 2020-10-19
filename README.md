@@ -17,4 +17,9 @@ From the `/bin` directory of the Blender's built-in Python, execute:
 ```
 
 ## Usage
-Selected the objects for renaming and run the script.
+Select the objects for renaming and run the script.
+
+
+## Configuration
+- `known_words` - a list of extra words that are added to the dictionary of the spell checker
+- `prohibited_words` - a list of words that are removed from the names
