@@ -24,7 +24,7 @@ def to_snake_case(name):
 
 
 def to_words(name):
-    return name.split('_')
+    return re.split(r'_|\.', name)
 
 
 def remove_prohibited_words(words):
