@@ -1,6 +1,6 @@
 # bpy-rename
 
-A small script to automatically adjust the names of objects in the hierarchy.
+A small script to automatically adjust the names of objects in the hierarchy in Blender.
 
 ## Features
 - Converts to snake case (`example_name`)
