@@ -2,6 +2,8 @@ import bpy
 import re
 from spellchecker import SpellChecker
 
+error_postfix = '<fix>'
+
 # a list of known words (in addition to the built-in)
 known_words = [
     'example', 'of', 'list'
@@ -30,7 +32,24 @@ def remove_prohibited_words(words):
 
 
 def apply_spell_correction(words):
-    return [spell.correction(w) for w in words]
+    words = [spell.correction(w) for w in words]
+    
+    for i in range(len(words)):
+        w = words[i]
+        
+        if w in spell.known([w]):
+            continue
+        
+        if not w.isalpha():
+            continue
+        
+        if w.endswith(error_postfix):
+            continue
+        
+        w += error_postfix
+        words[i] = w
+    
+    return words
 
 
 def to_name(words):
