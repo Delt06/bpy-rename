@@ -27,3 +27,4 @@ There are messages printed to console. If the console is not visible, click `Win
 ## Configuration
 - `known_words` - a list of extra words that are added to the dictionary of the spell checker
 - `prohibited_words` - a list of words that are removed from the names
+- `spell.distance` - the maximum distance between the word and a candidate for its correction. Possible values: {1, 2}.
